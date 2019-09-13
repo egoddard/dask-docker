@@ -16,10 +16,23 @@ RUN conda install --yes --freeze-installed \
     dask==2.3.0 \
     nomkl \
     numpy==1.16.2 \
-    pandas==0.24.2 \
+    pandas==0.25.1 \
     ipywidgets \
     dask-labextension==1.0.3 \
     python-graphviz \
+    graphviz \
+    matplotlib \
+    seaborn \
+    bokeh \
+    pyarrow \
+    sqlalchemy \
+    holoviews \
+    geoviews \
+    dask-ml \
+    nltk \
+    dill \
+    s3fs \
+    fastparquet \
     && jupyter labextension install @jupyter-widgets/jupyterlab-manager@1.0.1 dask-labextension@1.0.1 \
     && conda clean -tipsy \
     && jupyter lab clean \

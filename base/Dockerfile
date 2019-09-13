@@ -7,8 +7,20 @@ RUN conda install --yes --freeze-installed \
     dask==2.3.0 \
     nomkl \
     numpy==1.16.2 \
-    pandas==0.24.2 \
+    pandas==0.25.1 \
     tini==0.18.0 \
+    matplotlib \
+    seaborn \
+    bokeh \
+    pyarrow \
+    sqlalchemy \
+    holoviews \
+    geoviews \
+    dask-ml \
+    nltk \
+    dill \
+    fastparquet \
+    s3fs \
     && conda clean -tipsy \
     && find /opt/conda/ -type f,l -name '*.a' -delete \
     && find /opt/conda/ -type f,l -name '*.pyc' -delete \
