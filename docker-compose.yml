@@ -26,6 +26,9 @@ services:
       dockerfile: Dockerfile
     image: daskdev/dask-notebook
     hostname: notebook
+    volumes:
+      - .:/home/jovyan/work
+
     ports:
       - "8888:8888"
     environment:
